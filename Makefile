@@ -9,3 +9,9 @@ sota: sota.c
 
 run: sota
 	./sota
+
+test: test.c
+	$(CC) test.c -o test -Wall -Wextra -pedantic -std=c17
+
+run_t: test
+	./test

@@ -6,3 +6,6 @@
 
 sota: sota.c
 	$(CC) sota.c -o sota -Wall -Wextra -pedantic -std=c17
+
+run: sota
+	./sota
